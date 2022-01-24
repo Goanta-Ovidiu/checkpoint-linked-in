@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  box-sizing: border-box;
+  background-color: lightgrey;
+}
+
+header {
+  width: 60vw;
+  height: 2rem;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.cards-section {
+  max-width: 60vw;
+  margin: 1rem auto;
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  display: block;
+}
+
+.header-cards {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+#all-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+#one-card {
+  min-width: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#mutual-connections {
+  margin-top: 1rem;
+  color: lightslategray;
+}
+
+.background-image-card {
+  width: 100%;
+  height: 6rem;
+  border-radius: 5px 5px 0 0;
+  top: 0;
+  margin: 0;
+}
+
+.profile-image-card {
+  width: 50%;
+  height: 30%;
+  border-radius: 50%;
+  position: relative;
+  top: -2.5rem;
+}
+
+#cancel-btn {
+  position: absolute;
+  background-color: rgba(0, 0, 2, 0.3);
+  z-index: 1;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 5px;
+}
+
+#connect-btn {
+  position: relative;
+  cursor: pointer;
+  width: 80%;
+  background-color: white;
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 5rem;
+  border: 2px solid skyblue;
+  color: skyblue;
+  font-weight: bold;
+}
