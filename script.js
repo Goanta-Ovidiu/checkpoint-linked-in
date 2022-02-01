@@ -1,6 +1,6 @@
 const url = "https://dummy-apis.netlify.app/api/contact-suggestions?count=1";
 
-let pendingCount = 0;
+let pendingCount = localStorage.getItem("count") || 0;
 
 for (let i = 0; i < 8; i++) {
   getUser();
@@ -44,10 +44,12 @@ createCard = (card) => {
       button.textContent = "Pending";
       pendingCount++;
       pending.textContent = `${pendingCount} pending invitations`;
+      localStorage.setItem("count", pendingCount);
     } else if (button.textContent === "Pending") {
       button.textContent = "Connect";
       pendingCount--;
       pending.textContent = `${pendingCount} pending invitations`;
+      localStorage.setItem("count", pendingCount);
     }
   });
 
